@@ -73,6 +73,13 @@
   background: #1a202c;
   border-color: #1a202c;
   margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.botao2 svg{
+  width: 15px;
+  margin-right: 6px;
 }
 
 .botao2:hover {
