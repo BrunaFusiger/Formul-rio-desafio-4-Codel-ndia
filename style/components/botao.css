@@ -1,0 +1,7 @@
+.config-botao {
+    border-radius: 5px;
+    color: white;
+    padding: 8px 10%;
+    width: 52vh;
+    cursor: pointer;
+}

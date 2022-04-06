@@ -6,54 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
 
 <body>
-    <div>
-        <section>
-            <img src="/image/image.svg" alt="imagem-vetor-pessoas">
+    <main class="display-flex">
+        <section class="conteudo1 dimensoes-pg">
+            <img src="/image/image.svg" alt="imagem-vetor-pessoas" class="img-conteudo1 dimensoes-pg">
         </section>
 
-        <section>
-            <div>
-                <p>Bem-vindo de volta</p>
-                <h6>Faça login na sua conta</h6>
-            </div>
-            <div>
-                <form action="#">
-                    <legend>E-mail</legend>
-                    <input type="email" required placeholder="fulano@gmail.com">
+        <section class="conteudo2 dimensoes-pg">
+            <div class="conteudo2-geral display-flex">
 
-                        <br>
+                <div class="fonte-conteudo2 merriweather-font">
+                    <p class="fonte-conteudo2-linha1">Bem-vindo de volta</p>
+                    <h6 class="fonte-conteudo2-linha2">Faça login na sua conta</h6>
 
-                    <legend>Senha</legend>
-                    <input type="password" required placeholder="********">
+                    <div class="formulario lato-font">
+                        <form action="#">
+                            <div class="teste">
+                                <legend class="formulario-email-senha">E-mail</legend>
+                                <input type="email" required placeholder="fulano@gmail.com"
+                                    class="formulario-formulario">
+                            </div>
+                            <br>
 
-                        <br>
-
-                    <span>
-                        <label> <input type="checkbox" name="Lembre de mim" value="lembre de mim">Lembre de mim</label>
-                        <a href="link" target="_blank">Esqueceu sua senha?</a>
-                    </span>
-
-                        <br>
-                        <div>
-                            <input type="submit" value="Entrar">
+                            <legend class="formulario-email-senha">Senha</legend>
+                            <input type="password" required placeholder="********" class="formulario-formulario">
 
                             <br>
 
-                            <input type="submit" value="Ou faça login com o Google">
-                        </div>
-                </form>
+                            <div class="conteudo2-lembredemim display-flex especificacoes ">
+                                <label for="checkbox"> <input type="checkbox">Lembre de mim </label>
+                                <a href="link" target="_blank">Esqueceu sua senha?</a>
+                            </div>
+
+                            <br>
+                            <div id="botoes">
+                                <input type="submit" value="Entrar"
+                                    class="botao1 lato-font primary-font config-botao" />
+
+                                <br />
+
+                                <input type="submit" value="Ou faça login com o Google"
+                                    class="botao2 lato-font primary-font config-botao" />
+                            </div>
+                            <footer class="footer lato-font especificacoes ">
+                                <p>Não tem uma conta? <a href="#" target="_blank">Cadastre-se</a></p>
+                            </footer>
+                        </form>
+                    </div>
+                </div>
+
             </div>
 
-            <footer>
-                <p>Não tem uma conta? <a href="#" target="_blank">Cadastre-se</a></p>
-            </footer>
-
         </section>
-    </div>
+    </main>
 </body>
 
 </html>

@@ -26,6 +26,13 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+
+	/* 
+	 * Tornar página única sem scroll 
+	 */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 ol, ul {
 	list-style: none;
